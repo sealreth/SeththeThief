@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="24" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="rt" value="98"/>
+ </properties>
+ <tileset firstgid="1" name="desert" tilewidth="32" tileheight="32">
+  <properties>
+   <property name="test" value="op"/>
+  </properties>
+  <image source="desert.png" width="256" height="192"/>
+  <terraintypes>
+   <terrain name="Sand" tile="-1"/>
+   <terrain name="Cobble" tile="-1"/>
+  </terraintypes>
+  <tile id="9">
+   <properties>
+    <property name="Walkable" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="Walkable" value=""/>
+   </properties>
+  </tile>
+  <tile id="24" terrain=",,,1"/>
+  <tile id="25" terrain=",,1,1"/>
+  <tile id="26" terrain=",,1,"/>
+  <tile id="29">
+   <properties>
+    <property name="Walkable" value="1.0"/>
+   </properties>
+  </tile>
+  <tile id="32" terrain=",1,,1"/>
+  <tile id="33" terrain="1,1,1,1">
+   <properties>
+    <property name="Walkable" value=""/>
+   </properties>
+  </tile>
+  <tile id="34" terrain="1,,1,"/>
+  <tile id="35" terrain="1,1,1,"/>
+  <tile id="36" terrain="1,1,,1"/>
+  <tile id="39">
+   <properties>
+    <property name="Walkable" value=""/>
+   </properties>
+  </tile>
+  <tile id="40" terrain=",1,,"/>
+  <tile id="41" terrain="1,1,,"/>
+  <tile id="42" terrain="1,,,"/>
+  <tile id="43" terrain="1,,1,1"/>
+  <tile id="44" terrain=",1,1,1"/>
+ </tileset>
+ <tileset firstgid="49" name="landscape" tilewidth="32" tileheight="32">
+  <image source="landscape.png" width="512" height="384"/>
+  <tile id="0">
+   <properties>
+    <property name="Walkable" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="Walkable" value="1.0"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Map" width="24" height="24">
+  <properties>
+   <property name="Walkable" value=""/>
+  </properties>
+  <data encoding="csv">
+30,30,30,30,30,30,33,34,35,30,30,30,40,30,30,30,30,40,40,30,30,30,30,30,
+30,30,30,30,30,30,33,34,35,30,30,30,30,30,30,30,30,30,40,40,40,40,30,30,
+30,30,40,40,25,26,45,34,35,30,30,40,30,25,26,26,26,26,26,26,27,40,40,30,
+30,40,30,25,45,34,34,34,35,30,30,30,25,45,34,34,34,34,34,34,44,27,40,30,
+40,30,30,33,34,34,36,42,43,40,30,30,33,34,34,36,42,42,37,34,34,35,30,30,
+40,30,30,33,34,36,43,30,40,30,30,30,33,34,36,43,30,30,41,37,34,35,30,30,
+30,30,30,33,34,35,30,30,30,30,30,30,33,34,35,30,30,30,30,33,34,35,30,40,
+30,30,25,45,34,44,26,26,26,27,30,30,33,34,35,30,30,40,30,33,34,35,30,30,
+30,30,33,34,34,34,34,34,34,35,30,30,33,34,44,27,30,30,30,33,34,44,27,30,
+30,30,33,34,34,36,42,37,34,35,30,30,33,34,34,34,34,30,30,33,34,34,35,30,
+30,30,41,37,34,35,30,41,42,43,30,30,41,37,34,34,44,27,30,41,37,34,35,30,
+30,30,30,33,34,35,30,30,30,30,30,30,30,41,37,34,34,35,30,30,33,34,44,27,
+30,30,30,33,34,44,27,30,30,30,30,30,30,30,41,37,34,44,27,30,33,34,34,35,
+30,40,30,33,34,34,44,27,30,30,30,30,30,30,30,33,34,34,35,40,33,34,34,35,
+30,30,30,41,37,34,34,44,27,30,30,30,30,30,30,41,37,34,35,30,33,34,34,35,
+30,30,40,30,41,37,34,34,44,26,26,26,27,30,30,30,33,34,35,32,33,34,34,35,
+30,30,40,40,30,41,37,34,34,34,34,34,44,30,25,26,45,34,35,30,33,34,34,35,
+30,30,30,40,40,30,41,42,42,42,37,34,34,30,41,37,34,34,35,30,34,34,34,35,
+26,26,27,30,40,40,30,30,30,30,41,42,43,30,30,41,42,42,43,30,33,34,34,35,
+34,34,35,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,30,33,34,34,35,
+37,34,44,27,30,30,30,30,30,30,30,30,30,25,26,26,26,26,26,26,45,34,36,43,
+33,34,34,44,26,26,26,26,26,26,26,26,26,45,34,34,34,34,34,34,34,36,43,40,
+41,37,34,34,34,34,34,34,34,34,34,34,34,34,34,36,42,42,42,42,42,43,40,40,
+30,41,42,42,42,42,42,42,42,42,42,42,42,42,42,43,40,40,40,40,40,40,40,40
+</data>
+ </layer>
+ <objectgroup name="Objects">
+  <properties>
+   <property name="Trigger" value="Boem"/>
+  </properties>
+  <object name="Player" gid="48" x="320" y="321"/>
+  <object name="Enemy" gid="47" x="321" y="442">
+   <properties>
+    <property name="Message" value="I am Dangerous"/>
+    <property name="Trigger" value="EnemyHits"/>
+   </properties>
+  </object>
+  <object name="Enemy" gid="47" x="115" y="622">
+   <properties>
+    <property name="Message" value="I am Dangerous"/>
+    <property name="Trigger" value="EnemyHits"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <imagelayer name="Message" x="136" y="93" opacity="0.25">
+  <image source="Message.png"/>
+ </imagelayer>
+ <imagelayer name="Score" x="398" y="2" opacity="0.25">
+  <image source="Score.png"/>
+ </imagelayer>
+ <imagelayer name="Health" x="2" y="2" opacity="0.25">
+  <image source="Score.png"/>
+ </imagelayer>
+</map>
